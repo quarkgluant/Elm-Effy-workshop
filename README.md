@@ -77,7 +77,8 @@ choosePizzaIf p =
     _
         -> "We don't serve this pizza"
 ```
-le dernier cas, le "else" est figuré par un trait souligné, comme en Ruby pour un argument non utilisé
+le dernier cas, le "else" est figuré par un trait souligné, comme en Ruby pour un argument non utilisé.
+Petit exercice: copier/coller la fonction `choosePizzaIf` dans votre REPL. Vous constarez une erreur. A vous d'essayer de la fixer
 
 
 #### Let-In
@@ -202,6 +203,8 @@ type Pizza
 >Calzone 5
 ```
 En Elm on parle de constructeur de type. Ici, par exemple Calzone est un constructeur de type, puisqu'il permet de construire de nouvelles instances de Pizza
+
+pour plus d'infos sur les [constructeurs de type en Elm](https://medium.com/elm-shorts/an-intro-to-constructors-in-elm-57af7a72b11e)
 
 (extrait ci-dessous du livre de Bruce Tate, Fred Daoud)
 > Seven more languages in seven weeks
