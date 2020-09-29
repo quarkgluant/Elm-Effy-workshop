@@ -188,6 +188,11 @@ Il y en a 3 de bases
     , z = 6
     }
  ```
+Petit rappel sur la modification d'un champ, imaginons que le record ci-dessus soit `point` :
+```elm
+ { point | x = 3 }
+ -- ne modifie que la valeur de X dans 'point'. A noter qu'Elm, au niveau du stockage mémoire, s'arrange pour ne stocker que l'ancien et la "diff" (en gros), puisque les données sont immutables on a créé un nouveau record
+```
 
 
  Plus les types "classiques" dans la librairie standard d'Elm, les Dict, Array et Set. La principale différence entre un Array et une Liste est qu'avec les arrays on peut travailler sur les indices du tableau (qui commence à zéro).
