@@ -1,12 +1,14 @@
 # ELM le retour
 
-Pour cete seconde partie nous allons jouer avec [l'éditeur/IDE en ligne](https://ellie-app.com/new) 
-et (re)découvrir certains aspects du langage ELM. Une dernière partie sur l'aspect framework ne sera pas abordée ici.
+Pour cete seconde partie nous allons jouer (un peu) avec [l'éditeur/IDE en ligne](https://ellie-app.com/new) 
+et (re)découvrir (beaucoup) certains aspects du langage ELM. Une dernière partie sur l'aspect framework ne sera pas abordée ici.
 
 ### Rappel
 Elm est à la fois un langage **ET** un framework. Ce n'est pas un langage généraliste, il ne sert que pour des app oueb'. C'est un langage typé statiquement et fonctionnel, compilé (transpilé) en javascript dont les points forts sont, outre ceux lié au typage et au fonctionnel, un compilateur très user-friendly et une doc très bien faite.
 Il a été créé par un seul homme, Evan Czaplicki et est écrit en Haskell et en Elm. Il a inspiré Vue (notemment Vuex, une solution de gestion des états).
-Toutes les données sont immutables.
+Toutes les données sont immutables. 
+
+[un guide sympa](https://elmprogramming.com/)
 
 ### Rappel des commandes déjà vues
 
