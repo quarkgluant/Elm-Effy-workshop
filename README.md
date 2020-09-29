@@ -1,6 +1,6 @@
 # ELM le retour
 
-Pour cete seconde partie nous allons jouer (un peu) avec [l'éditeur/IDE en ligne](https://ellie-app.com/new) 
+Pour cette seconde partie nous allons jouer (un peu) avec [l'éditeur/IDE en ligne](https://ellie-app.com/new) 
 et (re)découvrir (beaucoup) certains aspects du langage ELM. Une dernière partie sur l'aspect framework ne sera pas abordée ici.
 
 ### Rappel
