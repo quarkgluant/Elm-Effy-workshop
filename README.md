@@ -176,7 +176,8 @@ Il y en a 3 de bases
 - les tuples
  (1, 2), (1, 'a'), (1, 'a', "et le reste") ou encore ([1, 2], "ma super chaîne à vélo") sont des tuples valides. Si vous définissez un alias avec un tuple, ou une liste de tuple, tous les autres tuples de ce type devront avoir les mêmes types dans le même ordre. Un tuple peut contenir 9 valeurs au maximum.
 - les enregistrements (records)
- { x = 2, y = 7 }
+ { x = 2, y = 7 }  
+
  Un détail : quand on définit un record sur plusieurs lignes, en Elm on préfère mettre la virgule séparant 2 couples de clé/valeur en début de ligne, comme ça si on veut enlever une valeur, on n'a qu'à modifier une seule ligne
  ```elm
     { x = 2
@@ -290,5 +291,57 @@ addPizza : List Pizza -> Pizza -> List Pizza
 getPizzaRecordAsString : { a | pz1 : Pizza, pz2 : Pizza } -> String
 ```
 petit exercice, à vous de déchiffrer les types ci-dessus
+
+Autre exercice (souvenir, souvenir) vous vous rappelez de cet exo d'Olivier
+```typescript
+enum Gender { M, F }
+​
+const players: Player[] = [
+  { name: 'Oli', score: 92, gender: Gender.M, isCool: true },
+  { name: 'Matth', score: 30, gender: Gender.M },
+  { name: 'Souf', score: 100, gender: Gender.M },
+  { name: 'Thilde', score: 3005, gender: Gender.F },
+  { name: 'Andrea', score: 288, gender: Gender.F },
+];
+​
+interface Player {
+    score: number;
+    name: string;
+    gender: Gender;
+    isCool?: boolean;
+}
+​
+function averageScore(players: Player[] ): number {
+  return players.reduce((acc, player) => {
+      return acc + player.score
+  }, 0) / players.length;
+}
+​
+function bestOf(playerA: Player, playerB: Player): Player | string {
+    if (playerA > playerB) {
+        return playerA;        
+    } else if (playerB > playerA) {
+        return playerB;
+    } else {
+        return 'TIE';
+    }
+}
+​
+function playerNames(players: Player[]): string[] {
+    return players.map((player) => player.name);
+}
+​
+function hasScoreOver(player: Player, score: number): boolean {
+    return player.score > score;
+}
+​
+function logPlayerState(player: Player): void {
+    console.log(`${player.name} has ${player.score}`);
+}
+
+```
+
+Hé bien on va essayer de l'adapter en Elm !!  
+
 
 Et pour terminer, on va passer par la case (obligatoire) Gifs de chats [ici](https://elm-lang.org/examples/cat-gifs) où vous aller décortiquer le code et le modifier pour afficher un bouton avec un look plus sympa (utilisons Bootstrap), changer le texte, bref expérimenter
