@@ -342,6 +342,7 @@ function logPlayerState(player: Player): void {
 ```
 
 Hé bien on va essayer de l'adapter en Elm !!  
+Dans un premier temps, on ne va s'intéresser qu'aux signatures
 
 
 Et pour terminer, on va passer par la case (obligatoire) Gifs de chats [ici](https://elm-lang.org/examples/cat-gifs) où vous aller décortiquer le code et le modifier pour afficher un bouton avec un look plus sympa (utilisons Bootstrap), changer le texte, bref expérimenter
